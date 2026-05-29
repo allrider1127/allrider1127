@@ -42,11 +42,11 @@ focus           "Compressible Flow · Solver Automation · HPC Pipelines · Prop
 
 stack
 {
-    simulation  (OpenFOAM CalculiX SU2 Code_Saturne "Elmer FEM" "NASA CEA");
-    languages   (Python C++ Bash C# C MATLAB);
-    cad         (Onshape SolidWorks "Fusion 360" AutoCAD FreeCAD Blender Meshmixer FlashPrint LibreCAD);
-    infra       (Docker Linux MPI Vim Conda Git);
-    ai          (Ollama "Hermes Agent" "Agentic AI" "SLM (Llama 3.2, Qwen)");
+    simulation  ("OpenFOAM" "CalculiX" "SU2" "Code_Saturne" "Elmer FEM" "NASA CEA");
+    languages   ("Python" "C++" "Bash" "C#" "C" "MATLAB");
+    cad         ("Onshape" "SolidWorks" "Fusion 360" "AutoCAD" "FreeCAD" "Blender" "Meshmixer" "FlashPrint" "LibreCAD");
+    infra       ("Docker" "Linux" "MPI" "Vim" "Conda" "Git");
+    ai          ("Ollama" "Hermes Agent" "Agentic AI" "SLM (Llama 3.2, Qwen)");
 }
 
 creed           "Simulate it. Validate it. Automate it. Ship it.";
@@ -76,7 +76,7 @@ mergeInfo
     repository  "csml-rpi/Foam-Agent";
     status      "Merged";
     linesAdded  1421;
-    venue       "NeurIPS 2025 · ML for Physical Sciences";
+    lab       "NeurIPS 2025 · ML for Physical Sciences";
     paper       "arXiv:2505.04997";
 }
 // ************************************************************************* //
@@ -286,7 +286,7 @@ I implemented a **runtime ESI translation middleware** that post-processes Found
 FoamAgentPaper
 {
     title       "Foam-Agent: Towards Automated Intelligent CFD Workflows";
-    authors     (Yue Somasekharan Zhang Cao Chen Di Pan);
+    authors     "(Yue Somasekharan Zhang Cao Chen Di Pan)";
     venue       "NeurIPS 2025 ML for Physical Sciences Workshop";
     paper       "arXiv:2505.04997";
     code        "github.com/csml-rpi/Foam-Agent";
