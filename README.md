@@ -18,22 +18,40 @@
 
 ---
 
-```diff
-+ const allrider1127 = {
-+   name:        "Jahongir Orzikulov",
-+   affiliation: "Istanbul Technical University — Mechanical Engineering",
-+   roles:       ["Computational Mechanical Engineer", "CFD Analyst", "Systems Engineer"],
-+   focus:       "Compressible Flow · Solver Automation · HPC Pipelines · Propulsion",
-+   stack: {
-+     simulation: ["OpenFOAM", "CalculiX", "SU2", "Code_Saturne", "Elmer FEM", "NASA CEA"],
-+     languages:  ["Python", "C++", "Bash", "C#", "C", "MATLAB"],
-+     cad:        ["Onshape", "SolidWorks", "Fusion 360", "AutoCAD", "FreeCAD",
-+                   "Blender", "Meshmixer", "FlashPrint", "LibreCAD"],
-+     infra:      ["Docker", "Linux", "MPI", "Vim", "Conda", "Git"],
-+     ai:         ["Ollama", "Hermes Agent", "Agentic AI", "SLM (Llama 3.2, Qwen)"],
-+   },
-+   creed:       "Simulate it. Validate it. Automate it. Ship it.",
-+ };
+```cpp
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2512                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      allrider1127;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+name            "Jahongir Orzikulov";
+affiliation     "Istanbul Technical University - Mechanical Engineering";
+roles           ("Computational Mechanical Engineer" "CFD Analyst" "Systems Engineer");
+focus           "Compressible Flow · Solver Automation · HPC Pipelines · Propulsion";
+
+stack
+{
+    simulation  (OpenFOAM CalculiX SU2 Code_Saturne "Elmer FEM" "NASA CEA");
+    languages   (Python C++ Bash C# C MATLAB);
+    cad         (Onshape SolidWorks "Fusion 360" AutoCAD FreeCAD Blender Meshmixer FlashPrint LibreCAD);
+    infra       (Docker Linux MPI Vim Conda Git);
+    ai          (Ollama "Hermes Agent" "Agentic AI" "SLM (Llama 3.2, Qwen)");
+}
+
+creed           "Simulate it. Validate it. Automate it. Ship it.";
+
+// ************************************************************************* //
 ```
 
 ---
@@ -49,9 +67,19 @@
   <img src="https://img.shields.io/badge/10/10_tests_passed-a6e3a1?style=flat-square" alt="Tests Passed"/>
 </p>
 
-```diff
-+ Merged +1,421 lines → csml-rpi/Foam-Agent
-+ NeurIPS 2025 · Multi-Agent CFD Automation · arXiv:2505.04997
+```cpp
+/*---------------------------------------------------------------------------*\
+| PR Details:                                                                 |
+\*---------------------------------------------------------------------------*/
+mergeInfo
+{
+    repository  "csml-rpi/Foam-Agent";
+    status      "Merged";
+    linesAdded  1421;
+    venue       "NeurIPS 2025 · ML for Physical Sciences";
+    paper       "arXiv:2505.04997";
+}
+// ************************************************************************* //
 ```
 
 [Foam-Agent](https://github.com/csml-rpi/Foam-Agent) — a NeurIPS-published multi-agent framework for automating CFD simulations in OpenFOAM ([arXiv:2505.04997](https://arxiv.org/abs/2505.04997)).
@@ -251,13 +279,20 @@ An end-to-end composable multi-agent framework for automating CFD simulations in
 
 I implemented a **runtime ESI translation middleware** that post-processes Foundation v10 case files to run correctly on ESI OpenFOAM containers — a 5-stage deterministic mutation pipeline with JSON-based rule configuration, Allrun bypass filtering, and full pytest regression coverage.
 
-```diff
-+ 📄 Foam-Agent: Towards Automated Intelligent CFD Workflows
-+ Authors:  Yue · Somasekharan · Zhang · Cao · Chen · Di · Pan
-+ Venue:    NeurIPS 2025 · ML for Physical Sciences Workshop
-+ Paper:    arXiv:2505.04997
-+ Code:     github.com/csml-rpi/Foam-Agent
-+ My PR:    #35 → Merged (+1,421 lines, 14 files)
+```cpp
+/*---------------------------------------------------------------------------*\
+| Publication Details:                                                        |
+\*---------------------------------------------------------------------------*/
+FoamAgentPaper
+{
+    title       "Foam-Agent: Towards Automated Intelligent CFD Workflows";
+    authors     (Yue Somasekharan Zhang Cao Chen Di Pan);
+    venue       "NeurIPS 2025 ML for Physical Sciences Workshop";
+    paper       "arXiv:2505.04997";
+    code        "github.com/csml-rpi/Foam-Agent";
+    myPR        "#35 -> Merged (+1,421 lines, 14 files)";
+}
+// ************************************************************************* //
 ```
 
 [📎 Read the paper](https://arxiv.org/abs/2505.04997) · [🔀 View the PR](https://github.com/csml-rpi/Foam-Agent/pull/35)
