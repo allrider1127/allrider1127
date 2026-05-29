@@ -18,22 +18,22 @@
 
 ---
 
-```javascript
-const allrider1127 = {
-  name:        "Jahongir Orzikulov",
-  affiliation: "Istanbul Technical University — Mechanical Engineering",
-  roles:       ["Computational Mechanical Engineer", "CFD Analyst", "Systems Engineer"],
-  focus:       "Compressible Flow · Solver Automation · HPC Pipelines · Propulsion",
-  stack: {
-    simulation: ["OpenFOAM", "CalculiX", "SU2", "Code_Saturne", "Elmer FEM", "NASA CEA"],
-    languages:  ["Python", "C++", "Bash", "C#", "C", "MATLAB"],
-    cad:        ["Onshape", "SolidWorks", "Fusion 360", "AutoCAD", "FreeCAD",
-                 "Blender", "Meshmixer", "FlashPrint", "LibreCAD"],
-    infra:      ["Docker", "Linux", "MPI", "Vim", "Conda", "Git"],
-    ai:         ["Ollama", "Hermes Agent", "Agentic AI", "SLM (Llama 3.2, Qwen)"],
-  },
-  creed:       "Simulate it. Validate it. Automate it. Ship it.",
-};
+```diff
++ const allrider1127 = {
++   name:        "Jahongir Orzikulov",
++   affiliation: "Istanbul Technical University — Mechanical Engineering",
++   roles:       ["Computational Mechanical Engineer", "CFD Analyst", "Systems Engineer"],
++   focus:       "Compressible Flow · Solver Automation · HPC Pipelines · Propulsion",
++   stack: {
++     simulation: ["OpenFOAM", "CalculiX", "SU2", "Code_Saturne", "Elmer FEM", "NASA CEA"],
++     languages:  ["Python", "C++", "Bash", "C#", "C", "MATLAB"],
++     cad:        ["Onshape", "SolidWorks", "Fusion 360", "AutoCAD", "FreeCAD",
++                   "Blender", "Meshmixer", "FlashPrint", "LibreCAD"],
++     infra:      ["Docker", "Linux", "MPI", "Vim", "Conda", "Git"],
++     ai:         ["Ollama", "Hermes Agent", "Agentic AI", "SLM (Llama 3.2, Qwen)"],
++   },
++   creed:       "Simulate it. Validate it. Automate it. Ship it.",
++ };
 ```
 
 ---
@@ -49,14 +49,19 @@ const allrider1127 = {
   <img src="https://img.shields.io/badge/10/10_tests_passed-a6e3a1?style=flat-square" alt="Tests Passed"/>
 </p>
 
-Merged **+1,421 lines** into [Foam-Agent](https://github.com/csml-rpi/Foam-Agent) — a NeurIPS-published multi-agent framework for automating CFD simulations in OpenFOAM ([arXiv:2505.04997](https://arxiv.org/abs/2505.04997)).
+```diff
++ Merged +1,421 lines → csml-rpi/Foam-Agent
++ NeurIPS 2025 · Multi-Agent CFD Automation · arXiv:2505.04997
+```
+
+[Foam-Agent](https://github.com/csml-rpi/Foam-Agent) — a NeurIPS-published multi-agent framework for automating CFD simulations in OpenFOAM ([arXiv:2505.04997](https://arxiv.org/abs/2505.04997)).
 
 - **Engineered a 5-stage ESI translation middleware** that enables Foundation v10 case files to run on ESI OpenFOAM containers (v2312, v2512) — eliminating the need for re-indexing the entire tutorial database
 - **Wired the translator into both the LangGraph pipeline and the MCP server**, with post-translation state refresh to prevent stale graph nodes
 - **10/10 pytest pass** with regression coverage for Allrun bypass, regex scoping, and structural file remapping
 
 > *"This is a very important contribution to the community and a very good design."*
-> — [LeoYML](https://github.com/LeoYML), Foam-Agent maintainer ([PR #35](https://github.com/csml-rpi/Foam-Agent/pull/35))
+> — [LeoYML](https://github.com/LeoYML), Foam-Agent maintainer ([comment on PR #35](https://github.com/csml-rpi/Foam-Agent/pull/35#issuecomment-4529480832))
 
 ---
 
@@ -70,15 +75,19 @@ Merged **+1,421 lines** into [Foam-Agent](https://github.com/csml-rpi/Foam-Agent
   <img src="https://img.shields.io/badge/k--ω_SST-cba6f7?style=flat-square" alt="Turbulence"/>
 </p>
 
-Full aerodynamic analysis of the **Talon UCAV** for SkyGuard Alliance — **1.7M cell hex-dominant mesh**, k-ω SST turbulence model, converged at 1000 iterations. The entire simulation was **orchestrated overnight** using my [KOR-Orchestrator](https://github.com/allrider1127/kor-orchestrator) daemon while I slept.
+Full aerodynamic analysis of the **Talon UCAV** for SkyGuard Alliance — **1.7M cell hex-dominant mesh**, converged at 1000 iterations. The entire simulation was **orchestrated overnight** using my [KOR-Orchestrator](https://github.com/allrider1127/kor-orchestrator) daemon while I slept.
 
-| Parameter | Value |
-|:---|:---|
-| **Lift-to-Drag Ratio** (L/D) | **9.99** |
-| **Lift Coefficient** (C_L) | **0.3236** |
-| **Drag Coefficient** (C_D) | **0.0324** |
-| **Pressure Residual** | 1.8 × 10⁻⁶ |
-| **Continuity Error** | 2.4 × 10⁻⁹ |
+**Why k-ω SST?** — Industry standard for external aerodynamics. Accurately resolves near-wall boundary layers and adverse pressure gradients without wall functions, critical for predicting flow separation on swept delta wings.
+
+**Why `simpleFoam`?** — Steady-state incompressible RANS solver. At 20 m/s freestream (Ma ≈ 0.06), compressibility effects are negligible — incompressible assumption holds.
+
+| Parameter | Value | Significance |
+|:---|:---|:---|
+| **Lift-to-Drag Ratio** (L/D) | **9.99** | Excellent for blended wing-body UCAV |
+| **Lift Coefficient** (C_L) | **0.3236** | Stable cruise lift at α = 5° AoA |
+| **Drag Coefficient** (C_D) | **0.0324** | Low parasitic drag — clean airframe |
+| **Pressure Residual** | 1.8 × 10⁻⁶ | Machine-precision convergence |
+| **Continuity Error** | 2.4 × 10⁻⁹ | Mass conservation verified |
 
 <p align="center">
   <img src="media/pressure_field.png" alt="Surface Pressure Distribution" width="48%"/>
@@ -148,13 +157,13 @@ docker run --rm -it \
 **24 hand-drawn engineering sheets** produced for MAK 107 (Technical Drawing) at İTÜ — pencil on A3/A2 paper using T-squares, set squares, compasses, and mechanical pencils under strict ISO 128/129 standards.
 
 > **⚡ Speed of Execution:**
-> - **Assignment 2** (Safety Valve Assembly — 10 detail drawings + 1 A2 assembly) — completed in **6 calendar days**. Allocated time was the **entire 13-week semester**. Fastest in the faculty.
+> - **Assignment 2** (Safety Valve Assembly — 10 detail drawings + 1 A2 assembly) — submitted **6 days after the assignment was announced**. The rest of the class had the **entire 13-week semester** to complete it. First and fastest submission in the faculty.
 
 <p align="center">
   <img src="media/preview_assignment-1_technical-text.png" alt="Technical Text Drawing" width="48%"/>
   <img src="media/preview_assignment-2_assembly.png" alt="Safety Valve Assembly Drawing (A2)" width="48%"/>
 </p>
-<p align="center"><em>Left: Assignment 1 — Technical Lettering (ISO) — Right: Assignment 2 — Safety Valve Assembly (A2)</em></p>
+<p align="center"><em>Left: Assignment 1 — Technical Lettering on A3 (ISO) — Right: Assignment 2 — Safety Valve Assembly on A2 (ISO)</em></p>
 
 ---
 
@@ -234,19 +243,6 @@ docker run --rm -it \
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=allrider1127&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=allrider1127&layout=compact&theme=catppuccin_mocha&hide_border=true" alt="Top Languages" height="165"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=allrider1127&theme=catppuccin-mocha&hide_border=true" alt="GitHub Streak" height="165"/>
-</p>
-
----
-
 ## 🏆 Open Source Contributions
 
 **Foam-Agent** — [csml-rpi/Foam-Agent](https://github.com/csml-rpi/Foam-Agent) • [PR #35](https://github.com/csml-rpi/Foam-Agent/pull/35) • Merged
@@ -255,15 +251,16 @@ An end-to-end composable multi-agent framework for automating CFD simulations in
 
 I implemented a **runtime ESI translation middleware** that post-processes Foundation v10 case files to run correctly on ESI OpenFOAM containers — a 5-stage deterministic mutation pipeline with JSON-based rule configuration, Allrun bypass filtering, and full pytest regression coverage.
 
-```bibtex
-@article{yue2025foam,
-  title   = {Foam-Agent: Towards Automated Intelligent CFD Workflows},
-  author  = {Yue, Ling and Somasekharan, Nithin and Zhang, Tingwen and
-             Cao, Yadi and Chen, Zhangze and Di, Shimin and Pan, Shaowu},
-  journal = {arXiv preprint arXiv:2505.04997},
-  year    = {2025}
-}
+```diff
++ 📄 Foam-Agent: Towards Automated Intelligent CFD Workflows
++ Authors:  Yue · Somasekharan · Zhang · Cao · Chen · Di · Pan
++ Venue:    NeurIPS 2025 · ML for Physical Sciences Workshop
++ Paper:    arXiv:2505.04997
++ Code:     github.com/csml-rpi/Foam-Agent
++ My PR:    #35 → Merged (+1,421 lines, 14 files)
 ```
+
+[📎 Read the paper](https://arxiv.org/abs/2505.04997) · [🔀 View the PR](https://github.com/csml-rpi/Foam-Agent/pull/35)
 
 ---
 
