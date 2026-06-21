@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Linux_Mint-87CF3E?style=flat-square&logo=linuxmint&logoColor=white" alt="Linux Mint"/>
+  <img src="https://img.shields.io/badge/debian-red?style=for-the-badge&logo=debian&logoColor=orange&color=darkred" alt="Debian"/>
   <img src="https://img.shields.io/badge/license-MIT-cba6f7?style=flat-square" alt="MIT"/>
 </p>
 
@@ -45,8 +45,8 @@ stack
     simulation  ("OpenFOAM" "CalculiX" "SU2" "Code_Saturne" "Elmer FEM" "NASA CEA");
     languages   ("Python" "C++" "Bash" "C#" "C" "MATLAB");
     cad         ("Onshape" "SolidWorks" "Fusion 360" "AutoCAD" "FreeCAD" "Blender" "Meshmixer" "FlashPrint" "LibreCAD");
-    infra       ("Docker" "Linux" "MPI" "Vim" "Conda" "Git");
-    ai          ("Ollama" "Hermes Agent" "Agentic AI" "SLM (Llama 3.2, Qwen)");
+    infra       ("Docker" "Linux" "MPI" "NeoVim" "Conda" "Git");
+    ai          ("Ollama" "Hermes Agent" "Odysseus" "SLM (Llama 3.2, Qwen)");
 }
 
 creed           "Simulate it. Validate it. Automate it. Ship it.";
@@ -247,7 +247,7 @@ docker run --rm -it \
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![MPI](https://img.shields.io/badge/MPI-a6e3a1?style=flat-square)
-![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white)
+![NeoVim](https://img.shields.io/badge/-NeoVim-black?style=flat&logo=neovim)
 ![Conda](https://img.shields.io/badge/Conda-44A833?style=flat-square&logo=anaconda&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
@@ -264,7 +264,7 @@ docker run --rm -it \
 
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white)
+![NeoVim](https://img.shields.io/badge/-NeoVim-black?style=flat&logo=neovim)
 
 </td></tr>
 </table>
@@ -323,5 +323,5 @@ FoamAgentPaper
 ---
 
 <p align="center">
-  <sub><code>// built on linux mint · compiled with vim · shipped via git</code></sub>
+  <sub><code>// built on Debian GNU/Linux · compiled with NeoVim · shipped via git</code></sub>
 </p>

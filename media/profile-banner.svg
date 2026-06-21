@@ -62,13 +62,13 @@
   <text x="45" y="340" class="ascii" xml:space="preserve">
     <tspan x="50" dy="0" fill="#f5c2e7" font-size="12px">  Jahongir Orzikulov</tspan>
     <tspan x="50" dy="17" fill="#bac2de" font-size="11px">  Computational Mechanical Engineer</tspan>
-    <tspan x="50" dy="15" fill="#bac2de" font-size="11px">  İTÜ Makina Fakültesi · 2024–2028</tspan>
+    <tspan x="50" dy="15" fill="#bac2de" font-size="11px">  İTÜ Makina Fakültesi · 2024–2029</tspan>
   </text>
 
   <!-- Projects gauge visualization -->
   <rect x="50" y="395" width="300" height="8" rx="4" fill="#313244"/>
   <rect x="50" y="395" width="225" height="8" rx="4" fill="url(#accentGrad)"/>
-  <text x="50" y="420" class="bar-text" fill="#a6adc8">Projects ████████████████░░░░░░ 7 repos · 3 Docker images</text>
+
 
   <!-- Right Side: Fastfetch Info Block -->
   <text x="490" y="85" class="info" xml:space="preserve">
@@ -78,10 +78,10 @@
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Role       </tspan><tspan fill="#cdd6f4">: Computational Mechanical Engineer</tspan></tspan>
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">University </tspan><tspan fill="#cdd6f4">: Istanbul Technical University (İTÜ)</tspan></tspan>
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Scholarship</tspan><tspan fill="#cdd6f4">: YTB Türkiye Bursları (Full-ride)</tspan></tspan>
-    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">OS         </tspan><tspan fill="#cdd6f4">: Linux Mint 22.3 (Cinnamon)</tspan></tspan>
+    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">OS         </tspan><tspan fill="#cdd6f4">: Debian GNU/Linux 13 (trixie)</tspan></tspan>
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">CPU        </tspan><tspan fill="#cdd6f4">: Intel i7-12700H (20 threads)</tspan></tspan>
-    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Shell      </tspan><tspan fill="#cdd6f4">: bash 5.2.21</tspan></tspan>
-    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Editor     </tspan><tspan fill="#cdd6f4">: vim</tspan></tspan>
+    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Shell      </tspan><tspan fill="#cdd6f4">: bash 5.2.37</tspan></tspan>
+    <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Editor     </tspan><tspan fill="#cdd6f4">: nvim</tspan></tspan>
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Focus      </tspan><tspan fill="#cdd6f4">: CFD · FEA · Propulsion · Automation</tspan></tspan>
     <tspan x="490" dy="20"><tspan fill="#89b4fa" font-weight="bold">Containers </tspan><tspan fill="#cdd6f4">: Docker · DockerHub</tspan></tspan>
   </text>
@@ -109,6 +109,6 @@
   <rect x="0" y="445" width="100%" height="23" fill="#181825"/>
   <rect x="0" y="456" width="100%" height="24" fill="#181825" rx="12"/>
   <text x="24" y="468" class="bar-text" fill="#a6adc8">
-    <tspan fill="#a6e3a1">✦</tspan> allrider1127  <tspan fill="#585b70">│</tspan>  <tspan fill="#f9e2af">İTÜ Mechanical Engineering · 2024–2028</tspan>  <tspan fill="#585b70">│</tspan>  <tspan fill="#cba6f7">CFD · FEA · Propulsion · Automation</tspan>  <tspan fill="#585b70">│</tspan>  <tspan fill="#89b4fa">Linux Mint · Docker</tspan>
+    <tspan fill="#a6e3a1">✦</tspan> allrider1127  <tspan fill="#585b70">│</tspan>  <tspan fill="#f9e2af">İTÜ Mechanical Engineering · 2024–2029</tspan>  <tspan fill="#585b70">│</tspan>  <tspan fill="#cba6f7">CFD · FEA · Propulsion · Automation</tspan>  <tspan fill="#585b70">│</tspan>  <tspan fill="#89b4fa">Debian GNU/Linux · Docker</tspan>
   </text>
 </svg>
